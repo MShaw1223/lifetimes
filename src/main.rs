@@ -8,7 +8,7 @@
 
 // fn my_push<T>(vector: &mut Vec<T>, element: T) {
 //     vector.push(element);
-//     // this works as it tells the compiler that the args are the same
+//     // this works as it tells the compiler that the args are the same view above
 // }
 
 fn my_push<'a, 'b>(vector: &'b mut Vec<&'a String>, element: &'a String) {
